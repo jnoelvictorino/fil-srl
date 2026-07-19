@@ -1,0 +1,54 @@
+[project]
+name = "python-template"
+version = "0.1.0"
+description = "A Python project template"
+authors = [
+  { name = "John Noel Victorino", email = "jnoelvictorino@gmail.com" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "pandas>=3.0.3",
+  "numpy",
+  "pyarrow",
+  "python-dotenv",
+  "tqdm",
+  "ipykernel",
+  "ipywidgets",
+  "matplotlib"
+]
+
+[dependency-groups]
+lint = [
+  "ruff>=0.11.0",
+  "pylint>=3.3",
+]
+dashboard = [
+  "streamlit>=1.35",
+  "plotly>=5.22",
+]
+train = [
+  "scikit-learn",
+  "mlflow",
+  "protobuf>=3.12,<4",
+  "huggingface_hub>=0.23.0",
+]
+hpc = [
+  { include-group = "train" },
+  { include-group = "dashboard" },
+  { include-group = "lint" }
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 88
+indent-width = 2
+
+[tool.ruff.format]
+preview = true
+
+[tool.pylint.format]
+indent-string = "  "

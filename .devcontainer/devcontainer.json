@@ -1,0 +1,49 @@
+{
+  "name": "Python Template",
+  "runArgs": [
+    "--name",
+    "python-template"
+  ],
+  "build": {
+    "context": "..",
+    "dockerfile": "../Dockerfile"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,consistency=cached",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "donjayamanne.githistory",
+        "ecmel.vscode-html-css",
+        "FanaticPythoner.better-todo-tree",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.codespaces",
+        "github.vscode-github-actions",
+        "GrapeCity.gc-excelviewer",
+        "huizhou.githd",
+        "mechatroner.rainbow-csv",
+        "ms-azuretools.vscode-docker",
+        "ms-python.pylint",
+        "ms-python.isort",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-python.vscode-python-envs",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-toolsai.datawrangler",
+        "ms-vscode.live-server",
+        "ms-vsliveshare.vsliveshare",
+        "samuelcolvin.jinjahtml"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/venv/bin/python"
+      }
+    }
+  }
+}
