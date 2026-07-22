@@ -10,6 +10,9 @@
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,consistency=cached",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteEnv": {
+    "GIT_SSH_COMMAND": "ssh"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
