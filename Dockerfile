@@ -10,6 +10,10 @@ ENV UV_PROJECT_ENVIRONMENT=/opt/venv
 WORKDIR /app
 
 COPY pyproject.toml ./
+COPY scripts/csf.sh /etc/profile.d/csf.sh
+
+RUN chmod 0644 /etc/profile.d/csf.sh \
+  && printf '\n# Load CSF helper function\n[ -f /etc/profile.d/csf.sh ] && . /etc/profile.d/csf.sh\n' >> /etc/bash.bashrc
 
 RUN uv sync --all-groups --no-install-project
 
