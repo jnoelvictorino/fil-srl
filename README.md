@@ -1,8 +1,8 @@
-# Python Project Template
+# Filipino Semantic Role Labeling
 
 [![Consistency Check](https://github.com/jnoelvictorino/python-template/actions/workflows/consistency-check.yml/badge.svg)](https://github.com/jnoelvictorino/python-template/actions/workflows/consistency-check.yml)
 
-A modern Python project template with Dev Container and Docker support.
+This repository is the source code for the Filipino Semantic Role Labeling.
 
 ## Tech Stack
 
@@ -25,6 +25,7 @@ A modern Python project template with Dev Container and Docker support.
 │   └── workflows/      # GitHub Actions workflows
 ├── .vscode/            # VS Code settings
 │   └── settings.json   # VS Code editor settings
+├── data/               # Data files (not included)
 ├── .env.template       # Environment variables template
 ├── .gitignore          # Git ignore rules
 ├── .python-version     # Python version specification

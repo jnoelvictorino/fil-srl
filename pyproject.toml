@@ -1,9 +1,13 @@
 [project]
-name = "python-template"
+name = "fil-srl"
 version = "0.1.0"
-description = "A Python project template"
+description = "This repository is the source code for the Filipino Semantic Role Labeling."
 authors = [
-  { name = "John Noel Victorino", email = "jnoelvictorino@gmail.com" }
+  { name = "John Noel Victorino", email = "john-noel.victorino@manchester.ac.uk" },
+  { name = "Maria Regina Estuar", email = "restuar@ateneo.edu" },
+  { name = "Yuan Anot", email = "yuananot@gmail.com" },
+  { name = "Rachel Edita Roxas", email = "roxasreo@gmail.com" },
+  { name = "Rakki Sison-Buban", email = "rakkisisonb@gmail.com" }
 ]
 license = "MIT"
 readme = "README.md"

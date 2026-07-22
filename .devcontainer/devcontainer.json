@@ -1,8 +1,8 @@
 {
-  "name": "Python Template",
+  "name": "Filipino Semantic Role Labeling",
   "runArgs": [
     "--name",
-    "python-template"
+    "fil-srl"
   ],
   "build": {
     "context": "..",
@@ -39,7 +39,8 @@
         "ms-toolsai.datawrangler",
         "ms-vscode.live-server",
         "ms-vsliveshare.vsliveshare",
-        "samuelcolvin.jinjahtml"
+        "samuelcolvin.jinjahtml",
+        "mohsen1.prettify-json"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/opt/venv/bin/python"
