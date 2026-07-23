@@ -36,12 +36,14 @@ train = [
   "scikit-learn",
   "mlflow",
   "protobuf>=3.12,<4",
-  "huggingface_hub>=0.23.0",
+  "huggingface_hub>=0.23.0"
 ]
 hpc = [
   { include-group = "train" },
   { include-group = "dashboard" },
-  { include-group = "lint" }
+  { include-group = "lint" },
+  "transformers>=4.35.0",
+  "torch>=2.3.0"
 ]
 
 [tool.uv]
